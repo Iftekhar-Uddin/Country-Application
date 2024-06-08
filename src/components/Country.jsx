@@ -5,7 +5,7 @@ import React from 'react'
 const Country = (props) => {
   const {name, flags, capital, population, area, currencies, languages, timezones, maps} = props.country
   console.log(props.country)
-  // console.log(languages)
+
     
   const handleRemoveCountry = (name) => {
      props.takeDataFromCountry(name)
@@ -13,7 +13,7 @@ const Country = (props) => {
 
   return (
     <article className="country">
-        <div>
+        <div className="elements">
             <img src={flags.png} alt={name.common} className="flag"/>
             <h3>Name: {name.common}</h3>
             <h3>Capital: {capital}</h3>

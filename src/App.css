@@ -13,3 +13,19 @@ h1 {
   text-align: center;
   font-size: 3rem;
 }
+
+
+.heyClass{
+  width:auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .heyClass{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}

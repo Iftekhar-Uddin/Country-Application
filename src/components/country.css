@@ -10,6 +10,11 @@
     transition: all 0.3s;
 }
 
+.elements{
+    display: flex;
+    flex-direction: column;
+}
+
 .country:hover {
     transform: scale(1.05);
 }
@@ -31,4 +36,45 @@
 .btn:hover {
     background-color: red;
     color: white;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .country {
+        width: 150px;
+        padding: 0.4rem;
+        align-items: center;
+        border-radius: 0.4rem;
+        transition: all 0.3s;
+    }
+
+    .elements{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+
+    h3{
+        font-size: 17px;
+    }
+    .country:hover {
+        transform: scale(1.05);
+    }
+    
+    .flag {
+        width: 8.5rem;
+        height: 5rem;
+    }
+    
+    .btn {
+        border-radius: 0.4rem;
+        padding: 0.3rem;
+    }
+    
+    .btn:hover {
+        background-color: red;
+        color: white;
+    }
 }
