@@ -1,6 +1,6 @@
 .country {
     width: 250px;
-    background-color: #0d919b;
+    background-color: #000000;
     color: white;
     display: flex;
     justify-content: center;
@@ -10,9 +10,20 @@
     transition: all 0.3s;
 }
 
-.elements{
+.ele{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+
+}
+
+.flagsec{
+
+}
+
+.restsec > h3{
+ font-size: 21px;
 }
 
 .country:hover {
@@ -20,7 +31,7 @@
 }
 
 .flag {
-    width: 10rem;
+    width: 12rem;
     height: 7rem;
 }
 
@@ -31,6 +42,10 @@
     cursor: pointer;
     background-color: orange;
     transition: all 0.3s;
+    width: 120px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
 }
 
 .btn:hover {
@@ -39,42 +54,39 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .country {
-        width: 150px;
-        padding: 0.4rem;
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
         align-items: center;
         border-radius: 0.4rem;
-        transition: all 0.3s;
+        transition: all 0.2s;
     }
 
-    .elements{
-        display: flex;
-        flex-direction: column;
+    .ele{
+        justify-content: space-between;
+        gap:5px
     }
 
-
-
-
-    h3{
-        font-size: 17px;
-    }
-    .country:hover {
-        transform: scale(1.05);
-    }
-    
     .flag {
-        width: 8.5rem;
+        width: 10rem;
         height: 5rem;
     }
+
+    .restsec > h3{
+        font-size: 18px;
+       }
     
     .btn {
-        border-radius: 0.4rem;
-        padding: 0.3rem;
-    }
-    
-    .btn:hover {
-        background-color: red;
-        color: white;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 0.4rem;
+        cursor: pointer;
+        width: 120px;
+        display: block;
+        margin: auto;
+        margin-top: 5px;
     }
 }

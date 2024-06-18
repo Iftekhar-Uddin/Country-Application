@@ -53,7 +53,7 @@ function App() {
       <Search takeFromSearch={handleSearch}/>
       {isLoading && <h2>Loading...</h2>}
       {error && <h2>{error.message}</h2>}
-      {countries && <Countries className="heyClass" sendData={filteredCountries} takeDataFromCountries={handleRemove}/>}
+      {countries && <Countries sendData={filteredCountries} takeDataFromCountries={handleRemove}/>}
     </>
   )
 }

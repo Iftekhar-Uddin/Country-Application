@@ -3,6 +3,7 @@ input {
   border-radius: 0.6rem;
   width: 20rem;
   font-size: 1.2rem;
+  outline: none;
 }
 
 input:focus {
@@ -14,18 +15,22 @@ h1 {
   font-size: 3rem;
 }
 
+@media screen and (max-width: 600px) {
+  input {
+    padding: 0.3rem;
+    border-radius: 0.4rem;
+    width: 15rem;
+    font-size: 1rem;
 
-.heyClass{
-  width:auto;
-}
-
-
-@media only screen and (max-width: 600px) {
-  .heyClass{
-    display: flex;
-    height: 100vh;
-    justify-content: space-between;
-    align-items: center;
-
+    margin-bottom: 8px;
+  }
+  
+  input:focus {
+    background-color: rgb(227, 254, 255);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
   }
 }
