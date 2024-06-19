@@ -11,8 +11,8 @@
     .countries {
         padding: 0.3rem;
         display: grid;
-        gap: 5px;
-        grid-template-columns: repeat(auto-fill, 170px);
+        gap: 8px;
+        grid-template-columns: repeat(auto-fill, 160px);
         justify-content: center;
     }
 }

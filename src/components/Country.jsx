@@ -18,10 +18,10 @@ const Country = (props) => {
             <img src={flags.png} alt={name.common} className="flag"/>
           </div>
           <div className="restsec">
-            <h3>Name: {name.common}</h3>
-            <h3>Capital: {capital}</h3>
-            <h3>Population: {population}</h3>
-            <h3>Area: {area} Squr.Km</h3>
+            <h2>Name: {name.common}</h2>
+            <p>Capital: {capital}</p>
+            <p>Population: {population}</p>
+            <p>Area: {area} Squr.Km</p>
             <button className="btn" onClick={()=> {handleRemoveCountry(name.common)}} >Remove</button>
           </div>
 
